@@ -1,0 +1,204 @@
+
+Theme Name: Custom thème Julien Fernandes - Projet 2
+Template: business-press
+*/
+
+root: {
+  --pink: #CF467C;
+  --pink-dark: #8F0E73;
+  --red: red;
+};
+/*var(--blue);*/
+
+.headermain {
+    background-color: #ffffb1 !important;
+}
+
+
+#logoastext {
+  color: darkgoldenrod;
+}
+
+
+
+/*Home page*/
+
+.font-home {
+  color:black;
+  background-color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*opacity:0.1;*/
+}
+
+.home-boxe p,h1 {
+	color: white;
+}
+
+.home-boxe {
+  background-color: #000000bd;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.home-boxe *{
+  color: white;
+}
+
+.entry-content .second_content {
+  margin-bottom: 20px;
+}
+
+.page-template-template-home-page-php .page {
+  margin-bottom: 30px;
+}
+
+.home_slider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-content {
+	width: 100%;
+}
+
+/*Preview post*/
+.postsloop .content-first{
+  border: darkgoldenrod solid 4px;
+ /* height: 400px;*/
+  background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.cover_post .desc_post {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px 0px 0px 0px;
+  font-size: 14px !important;
+}
+.postsloop .content-second h3.the-title {
+  border: none !important;
+  background-color: inherit !important;
+}
+
+.postsloop .content-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgoldenrod;
+}
+
+.postsloop .img-responsive {
+  width: 100%;
+}
+
+.postsloop .info_post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+    color: darkgoldenrod;
+}
+
+.hover_view_button {
+	transition: 300ms all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #ffffff78;
+    cursor: pointer;
+}
+
+.postsloop .content-first:hover .hover_view_button{
+    top: 0px;
+}
+.hover_view_button .button_view {
+	color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    width: 120px;
+    transition: all 300ms;
+    padding: 10px 12px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.hover_view_button .button_view:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+
+/*Single post*/
+.single_post .main_img {
+	width: 100%;
+	border-radius: 3px;
+}
+.single_post .info_post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.single_post .content_head {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+	.single_post .content_head {
+		display: flex;
+		align-items: center;
+	}
+	.single_post .info_post h3{
+		margin-top: 0px;
+	}
+}
+.content_head span {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.spacer {
+	height: 2px;
+    width: 100%;
+    background-color: black;
+    margin: 30px 0px 30px 0px;
+    display: inline-flex;
+}
+/*.postsloop:hover {
+  background: grey;
+}
+.postsloop {
+  transition: all 300ms;
+}*/
+
+
+/*.postsloop:hover {
+  animation-name: post;
+  -webkit-animation-name: post;
+  -webkit-animation-duration: 500ms;
+  transition: all 500ms;
+  transform: scale(1.1);
+}
+.postsloop
+{
+  transition: all 300ms;
+}
+
+@keyframes post {
+    30%   {transform: scale(1.125);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.1);}
+}
